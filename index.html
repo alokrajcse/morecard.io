@@ -10,42 +10,75 @@
       background-color: #f5f5f5;
     }
 
+    .header {
+      background-color: #2196F3;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+
     .dashboard {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       height: 100vh;
+      padding: 10px;
     }
 
     .dashboard-item {
       margin: 10px;
       padding: 20px;
       background-color: #ffffff;
-      border: 1px solid #ccc;
       border-radius: 5px;
       width: 200px;
       text-align: center;
       text-decoration: none;
       color: #333;
-      transition: background-color 0.3s ease-in-out;
+      transition: transform 0.3s ease-in-out;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      position: relative;
+      overflow: hidden;
     }
 
     .dashboard-item:hover {
-      background-color: #f5f5f5;
+      transform: scale(1.05);
     }
 
     .dashboard-item::after {
       content: "";
-      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: 2px;
-      background-color: #ccc;
-      margin-top: 10px;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
     }
 
-    @media (max-width: 480px) {
+    .dashboard-item:hover::after {
+      opacity: 1;
+    }
+
+    .dashboard-item-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .dashboard-item-title {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #000;
+    }
+
+    .dashboard-item-description {
+      font-size: 14px;
+      color: #000;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
       .dashboard-item {
         width: 100%;
       }
@@ -53,18 +86,27 @@
   </style>
 </head>
 <body>
+  <div class="header">
+    <h1>My Dashboard</h1>
+  </div>
   <div class="dashboard">
     <a href="about.html" class="dashboard-item">
-      <h2>About</h2>
-      <p>Learn more about us</p>
+      <div class="dashboard-item-content">
+        <h2 class="dashboard-item-title">About</h2>
+        <p class="dashboard-item-description">Learn more about us</p>
+      </div>
     </a>
     <a href="contact.html" class="dashboard-item">
-      <h2>Contact Us</h2>
-      <p>Get in touch with us</p>
+      <div class="dashboard-item-content">
+        <h2 class="dashboard-item-title">Contact Us</h2>
+        <p class="dashboard-item-description">Get in touch with us</p>
+      </div>
     </a>
     <a href="feedback.html" class="dashboard-item">
-      <h2>Feedback</h2>
-      <p>Leave your valuable feedback</p>
+      <div class="dashboard-item-content">
+        <h2 class="dashboard-item-title">Feedback</h2>
+        <p class="dashboard-item-description">Leave your valuable feedback</p>
+      </div>
     </a>
   </div>
 </body>
