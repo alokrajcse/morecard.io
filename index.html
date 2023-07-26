@@ -77,6 +77,7 @@
       opacity: 0.8;
     }
 
+    /* Responsive styles for mobile devices */
     @media (max-width: 768px) {
       .dashboard {
         align-items: center;
@@ -87,6 +88,31 @@
         max-width: 300px;
         margin: 10px;
       }
+    }
+
+    /* Updated CSS for the content in "About the Developer" page */
+    .developer-info {
+      background-color: #f5f5f5;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .developer-info p {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+    .developer-info ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .developer-info li {
+      list-style-type: disc;
+    }
+    /* Additional style for the "About the Developer" page heading */
+    .developer-heading {
+      color: #2196F3;
+      text-align: center;
+      margin-bottom: 20px;
     }
   </style>
 </head>
@@ -113,11 +139,17 @@
         <span class="dashboard-item-description">Leave your valuable feedback</span>
       </div>
     </a>
-    <!-- New Card -->
     <a href="https://sitassanbeta.netlify.app/" class="dashboard-item">
       <div class="dashboard-item-content">
         <h2 class="dashboard-item-title">Official Website</h2>
         <span class="dashboard-item-description">sitassanbeta.netlify.app</span>
+      </div>
+    </a>
+    <!-- New Card -->
+    <a href="about-developer.html" class="dashboard-item">
+      <div class="dashboard-item-content">
+        <h2 class="dashboard-item-title">About the Developer</h2>
+        <span class="dashboard-item-description">Learn more about the creator</span>
       </div>
     </a>
   </div>
