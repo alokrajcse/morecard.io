@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About-Sonal</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(to bottom, #FFC0CB, #FF5733);
+            color: #fff;
+            text-align: center;
+            padding: 80px 0;
+            position: relative;
+        }
+
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fff;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+            filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+            transition: transform 0.3s ease-in-out; /* Added transition property */
+        }
+
+        /* Added hover effect for the image */
+        header img:hover {
+            transform: scale(1.1); /* Increase the size of the image */
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 20px 0;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .highlight {
+            color: #FFF;
+        }
+
+        .info {
+            text-align: center;
+        }
+
+        .info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .social-icons a {
+            font-size: 2rem;
+            color: #333;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover {
+            color: #FF5733;
+        }
+
+        /* Cute decorative elements */
+        .heart {
+            font-size: 2rem;
+            color: #FF5733;
+        }
+
+        /* Playful shapes */
+        .star {
+            width: 50px;
+            height: 50px;
+            background-color: #FFD700;
+            clip-path: polygon(50% 0%, 61.8% 38.2%, 100% 50%, 61.8% 61.8%, 50% 100%, 38.2% 61.8%, 0% 50%, 38.2% 38.2%);
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .flower {
+            width: 60px;
+            height: 60px;
+            background-color: #FFC0CB;
+            border-radius: 50%;
+            position: relative;
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .flower::before,
+        .flower::after {
+            content: '';
+            width: 20px;
+            height: 60px;
+            background-color: #FFC0CB;
+            position: absolute;
+            top: 0;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .flower::before {
+            left: 20px;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+
+        .flower::after {
+            left: 40px;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://sitassanbeta.vercel.app/sonal.jpeg" alt="Sonal">
+        <h1>Sonal Sharma</h1>
+        <p class="highlight">Knowledge Enthusiast</p>
+    </header>
+    
+    <div class="container">
+        <div class="info">
+            <h2>About Me</h2>
+            <span>
+               I am sonal , a Bihar native and a prodigious scholar who completed her 12th grade at the prestigious Super 30 institute. My exceptional general knowledge spans diverse subjects, reflecting my insatiable curiosity and passion for learning. I embody  the spirit of Bihar with my dedication to education and a bright future ahead. <span class="heart"><br>❤</span>
+            </span>
+            <br>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/sonaa.sharmaaa/">Instagram</a>
+        </div>
+       
+        <div class="star"></div>
+        <div class="flower"></div>
+    </div>
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+</html>
