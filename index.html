@@ -336,6 +336,57 @@ footer h3 em {
 
     </div>
   </div>
+  <script>
+    document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+
+        var customMenu = document.getElementById('customMenu');
+        customMenu.style.display = 'block';
+        customMenu.style.left = e.pageX + 'px';
+        customMenu.style.top = e.pageY + 'px';
+    });
+
+    document.addEventListener('click', function (e) {
+        var customMenu = document.getElementById('customMenu');
+        customMenu.style.display = 'none';
+
+
+
+
+
+      
+    });
+</script>
+
+  <script>
+
+
+    document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
+
+    document.addEventListener('keydown', function (e) {
+        if (e.ctrlKey && (e.key === 'c' || e.key === 'C')) {
+            e.preventDefault();
+        }
+    });
+
+    document.addEventListener('selectstart', function (e) {
+        e.preventDefault();
+    });
+
+    document.addEventListener('copy', function (e) {
+        e.preventDefault();
+    });
+
+    document.addEventListener('dragstart', function (e) {
+        var target = e.target;
+        if (target.nodeName === 'IMG' || target.nodeName === 'A') {
+            e.preventDefault();
+        }
+    });
+  </script>
+
 </body>
 <br>
 <br>
